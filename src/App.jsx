@@ -1,7 +1,10 @@
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+
 function App() {
+  const [selectedProject, setSelectedProject] = useState(null);
   return (
     <>
       {/* Navigation */}
@@ -95,7 +98,10 @@ function App() {
 
             {/* Project 1 */}
             <div className="col-12 col-md-4">
-              <div className="card project-card h-100">
+              <div
+  className="card project-card h-100"
+  onClick={() => setSelectedProject("Project 1")}
+>
                 <div className="card-body p-4">
                   <div className="project-icon">
                     📁
@@ -108,7 +114,10 @@ function App() {
 
             {/* Project 2 */}
             <div className="col-12 col-md-4">
-              <div className="card project-card h-100">
+              <div
+  className="card project-card h-100"
+  onClick={() => setSelectedProject("Project 2")}
+>
                 <div className="card-body p-4">
                   <div className="project-icon">
                     📁
@@ -121,7 +130,10 @@ function App() {
 
             {/* Project 3 */}
             <div className="col-12 col-md-4">
-              <div className="card project-card h-100">
+              <div
+  className="card project-card h-100"
+  onClick={() => setSelectedProject("Project 3")}
+>
                 <div className="card-body p-4">
                   <div className="project-icon">
                     📁
@@ -135,6 +147,13 @@ function App() {
           </div>
         </div>
       </section>
+      {selectedProject && (
+  <div className="text-center mt-4">
+    <p className="project-message">
+      You selected {selectedProject}.
+    </p>
+  </div>
+)}
 
       {/* Skills */}
       <section
