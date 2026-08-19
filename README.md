@@ -1,16 +1,48 @@
-# React + Vite
+ Wesley's Portfolio
+ 
+ Description and use
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website created for my web development class. 
+The site presents information about me, my skills, and projects.
 
-Currently, two official plugins are available:
+Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- JavaScript
+- Bootstrap
+- CSS
+- Git
+- GitHub
 
-## React Compiler
+Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The website uses a dark sci-fi inspired design with warm yellow and orange colors based on a sunrise theme. The layout works on both desktop and mobile.
 
-## Expanding the ESLint configuration
+Running the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the GitHub repository.
+2. Open the project folder in VS Code.
+3. Run `npm install`.
+4. Run `npm run dev`.
+5. Open the local development URL in a browser.
+
+Deployment
+
+The portfolio is deployed using Vercel.
+
+ Live Website
+
+https://wesley-portfolio-phi.vercel.app/
+
+GitHub Repository
+
+https://github.com/XeroMercy/wesley-portfolio.git
+
+Deployment Steps
+
+1. Created the portfolio using React and Vite.
+2. Added Bootstrap and custom CSS.
+3. Pushed the project to GitHub.
+4. Connected the GitHub repository to Vercel.
+5. Deployed the portfolio website.
