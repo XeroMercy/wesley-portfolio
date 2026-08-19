@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: "Orbitron", sans-serif;
+
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #585839;
-  background: rgb(27, 27, 27);
+  color: #f5e6b3;
+  background: #000000;
 }
 
 html {
@@ -12,7 +22,9 @@ html {
 /* Navigation */
 
 .navbar {
-  padding: 15px 0;
+  padding: 18px 0;
+  background: #050505 !important;
+  border-bottom: 1px solid #6b4615;
 }
 
 .nav-link:hover {
@@ -31,7 +43,10 @@ html {
 }
 
 .hero h1 {
-  letter-spacing: -1px;
+  color: #f4c95d;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0 0 15px rgba(244, 201, 93, 0.35);
 }
 
 .hero-description {
@@ -57,18 +72,23 @@ html {
 /* Projects */
 
 .projects-section {
-  background: #f8f9fa;
+  background: #000000;
 }
 
 .project-card {
-  border: none;
+  background: #111111;
+  color: #f5e6b3;
+  border: 1px solid #4a3512;
   border-radius: 12px;
   min-height: 200px;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  border-color: #f4a340;
+  box-shadow: 0 0 20px rgba(244, 163, 64, 0.15);
 }
 
 .project-icon {
@@ -91,10 +111,19 @@ html {
 }
 
 .skills-container span {
-  background: #212529;
-  color: white;
+  background: #111111;
+  color: #f4c95d;
+  border: 1px solid #6b4615;
   padding: 10px 18px;
-  border-radius: 20px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.skills-container span:hover {
+  background: #d99527;
+  color: #090909;
+  border-color: #f4c95d;
 }
 
 /* Contact */
